@@ -1,0 +1,70 @@
+body {
+    padding-top: 60px;
+    background-color: #FAFAFA;
+}
+
+.topbar {
+    font-size: 1.5em;
+}
+
+.container-fluid > .sidebar {
+    top: 10px;
+    font-size: 1.5em;
+    color: #BFBFBF;
+}
+
+.container-fluid > .sidebar li {
+    padding: 0.5em;
+}
+
+section {
+    margin-top: 48px;
+}
+
+.master-head h1 {
+    margin-bottom: 0px;
+    /*color: #C33;*/
+}
+
+.master-head p.lead {
+    margin-top: 18px;
+    font-size: 18px;
+}
+
+
+.shadow-title {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+}
+
+img.thumbnail {
+    width: 210px;
+    /*height: 150px;*/
+}
+
+
+div.container-fluid a:link, div.container-fluid a:visited {
+    color: #09c;
+    text-decoration: none;
+}
+
+div.container-fluid a:hover {
+    color: #c33;
+}
+
+a.paper_link {
+    display:inline-block;
+    background: url("../images/pdf.png") center right no-repeat;
+    padding-right: 22px;
+}
+
+img.bibtex_link {
+    cursor:pointer;
+}
+
+pre.invisible_bibtex {
+    display: none;
+}
+
+a.source_code_link {
+    font-family: Courier New, Courrier;
+}
