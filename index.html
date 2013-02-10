@@ -1,206 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" >
-    <title>Rodrigo Benenson github page</title>
-
-    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
-    <link rel="stylesheet" href="stylesheets/index.css">
-
-    <script language="javascript" type="text/javascript">
-        function toggle(element) {
-            if(element.style.display=="block") {
-                element.style.display="none";
-            } else {
-                element.style.display="block";
-            }
-        }
-    </script>
+    <title>遗世之都</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="http://necolas.github.com/normalize.css/2.1.0/normalize.css">
+    <link rel="stylesheet" href="global/global.css">
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 </head>
 <body>
-
-<div class="topbar" data-scrollspy="scrollspy">
-    <div class="topbar-inner">
-        <div class="container">
-            <a class="brand" href="#">沁♥欣</a>
-            <ul>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#data">Data</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div><!-- /container -->
-    </div>
-</div><!-- /topbar -->
-
-
-<div class="container-fluid">
-<div class="sidebar">
-    <div class="well">
-        <ul>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#data">Data</a></li>
-            <li><a href="#contact">Contact</a></li>
+<header id="header">
+    <nav id="nav">
+        <ul class="nav-list l-right">
+            <li class="nav-item"><a class="nav-link s-active" href="#">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">ARTICLE</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">DEMO</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">PROJECT</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">SHARE</a></li>
         </ul>
-    </div>
-</div> <!-- /sidebar -->
-<div class="content">
-
-<header class="master-head masthead" id="overview">
-    <div class="inner">
-        <div class="container">
-            <div class="row">
-                <div class="span16"><h2>边界</h2></div>
-            </div> <!-- /row -->
-            <div class="row">
-                <div class="offset1 shadow-title"><h1>只是为了跨越</h1></div>
-            </div> <!-- /row -->
-            <p class="lead">
-                我希望能够永远的在一起，面对困难，克服挫折，享受生活带来的美好，感恩上天赐予的缘分
-            </p>
-        </div><!-- /container -->
-    </div>
+    </nav>
+    <section id="guard-pic"></section>
 </header>
+<section id="main">
 
-
-<section id="publications">
-
-<div class="container span16">
-
-<div class="page-header">
-    <h1>Publications <small>free the ideas!</small></h1>
-</div>
-
-<div class="row">
-    <div class="span4">
-        <p></p>
-    </div>
-    <div class="span12">
-    </div>
-</div> <!-- /row -->
-<!--<hr>-->
-
-
-<h4 id="year2013">2013 <small></small></h4>
-
-
-<div class="row">
-    <div class="span4">
-        <ul class="media-grid">
-            <li><a href="http://rodrigob.github.com/documents/2012_eccv_cvvt_workshop_fast_stixels_estimation.pdf">
-                <img class="thumbnail" src="figures/2012_eccv_cvvt_workshop_example_system_results_small.png" /></a></li>
-        </ul>
-    </div>
-    <div class="span12">
-        <h3><a class="paper_link" href="http://rodrigob.github.com/documents/2012_eccv_cvvt_workshop_fast_stixels_estimation.pdf">
-           报告题目</a></h3>
-        <p>林沁
-
-        </p>
-        <blockquote>
-            <p>报告内容简介</p>
-        </blockquote>
-        <p><a href="https://bitbucket.org/rodrigob/doppia" class="source_code_link">源码</a>随意用</p>
-    </div>
-</div> <!-- /row -->
-<hr>
-</div> <!-- /container -->
 </section>
+<footer id="footer">
 
-
-<section id="code">
-
-    <div class="container span16">
-
-        <div class="page-header">
-            <h1>Code <small>free the sources!</small></h1>
-        </div>
-
-        <p>Due to industrial partnerships, most of the code I write is closed source.<br>
-            Happily, I have been recently authorized to <a href="https://bitbucket.org/rodrigob/doppia" class="source_code_link">release the source code</a> of <a href="#year2012">my work on fast pestrians detection</a>.
-        </p>
-        <p>Otherwise, here is a list of interesting open-source code I have used:</p>
-        <ul>
-            <li>Linux port of <a href="https://github.com/rodrigob/barinova_pedestrians_detection">Pedestrian detection using Hough forest</a>, by Olga Barinova.</li>
-            <li><a href="https://github.com/rodrigob/cudatemplates">cudatemplates</a>, makes my life with CUDA (GPU) code much easier.</li>
-            <li><a href="http://www.ros.org">ROS</a>, is a good enough tool to create modular robotic software.</li>
-            <li>I believe research must use open source tools. My current combo is
-                C++
-                + <a href="http://qt.nokia.com/products/developer-tools">QtCreator</a>
-                + <a href="http://numpy.scipy.org">numpy</a>
-                + <a href="http://docs.scipy.org/doc/scipy/reference">scipy</a>
-                + <a href="http://matplotlib.sourceforge.net">matplotlib</a>
-                + <a href="http://code.google.com/p/spyderlib">spyder</a>.</li>
-        </ul>
-
-
-    </div> <!-- /container -->
-</section>
-
-
-<section id="data">
-
-    <div class="container span16">
-
-        <div class="page-header">
-            <h1>Data <small>free the bits!</small></h1>
-        </div>
-
-        <p>These are some of the datasets I have used during my research:</p>
-        <ul>
-            <li><a href="http://pascal.inrialpes.fr/data/human">INRIA persons</a>, the standard dataset for pedestrians.</li>
-            <li><a href="http://www.vision.caltech.edu/Image_Datasets/CaltechPedestrians">Caltech pedestrians</a>, a (much) larger dataset of pedestrians.</li>
-            <li><a href="http://www.vision.ee.ethz.ch/~aess/dataset">ETHZ pedestrians</a>, one of the rare color stereo sequences with annotated pedestrians.</li>
-
-        </ul>
-
-    </div> <!-- /container -->
-</section>
-
-
-<section id="contact">
-
-    <div class="container span16">
-
-        <div class="page-header">
-            <h1>联系方式 <small>林沁是谁？</small></h1>
-        </div>
-
-        <div class="row">
-            <div class="span12">
-                <p>我叫 <a href="https://plus.google.com/114975295342705145033/about"><span itemprop="name" >
-                    林沁</span></a>.</p>
-                <p>目前就读于厦门大学研究生二年级</p>
-                <p>目前正在搞一些视频搜索方面的研究。。自行补充</p>
-                <p>你可以联系我的
-                    <a href="https://plus.google.com/114975295342705145033/about" title="social profile">google+</a>
-                </p>
-                <p><br><br><a href="https://plus.google.com/114975295342705145033/about" title="social profile">我</a>想建设一个更美好的世界。</p>
-            </div>
-        </div> <!-- /row -->
-
-        <hr>
-
-    </div> <!-- /container -->
-
-    <div class="container span6">
-        <ul class="media-grid">
-            <li><a href="http://www.flickr.com/photos/rodrigob">
-                <img style="width: 300px;" src="http://farm5.staticflickr.com/4150/4972864677_3833187210.jpg" title="I like photography"/></a></li>
-        </ul>
-    </div> <!-- /container -->
-
-    <div class="container">
-        <center><p><small>Page created using <a href="http://twitter.github.com/bootstrap">bootstrap</a>.</small></p></center>
-    </div> <!-- /container -->
-</section>
-
-</div> <!-- /content -->
-</div> <!-- /container fluid -->
-
-
-<!-- Javascript -->
-<script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
-<script src="http://twitter.github.com/bootstrap/1.4.0/bootstrap-scrollspy.js"></script>
-
-</body></html>
+</footer>
+</body>
+</html>

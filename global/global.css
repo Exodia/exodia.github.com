@@ -1,0 +1,61 @@
+body {
+    background: url(../images/bgr.jpg) top center no-repeat #101620;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+#footer {
+    background: url(../images/featured-light.jpg);
+}
+
+#nav {
+    overflow: hidden;
+    margin: 35px 150px 0 0;
+}
+
+#guard-pic {
+    width: 960px;
+    height: 230px;
+    margin: 0 auto;
+    background: url("../images/digimurai.png") no-repeat center;
+}
+
+.l-right {
+    float:right;
+}
+
+
+.nav-list {
+
+}
+
+.nav-item {
+    float: left;
+    margin-left: 5px;
+}
+
+.nav-link {
+    display: block;
+    padding:5px 10px;
+    border-radius: 30px;
+    color: white;
+    font:bold 20px Verdana;
+}
+
+.nav-link:hover {
+    color: #f4851c;
+}
+
+.nav-link.s-active {
+    color: #fff;
+    background: #ff9000;
+}
+
