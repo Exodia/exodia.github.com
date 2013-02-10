@@ -18,7 +18,7 @@ a {
 
 #nav {
     overflow: hidden;
-    margin: 35px 150px 0 0;
+    margin: 35px 120px 0 0;
 }
 
 #guard-pic {
@@ -33,10 +33,6 @@ a {
 }
 
 
-.nav-list {
-
-}
-
 .nav-item {
     float: left;
     margin-left: 5px;
@@ -44,10 +40,11 @@ a {
 
 .nav-link {
     display: block;
-    padding:5px 10px;
+    padding:6px 15px;
     border-radius: 30px;
     color: white;
-    font:bold 20px Verdana;
+    letter-spacing: -1px;
+    font:bold 21px Verdana;
 }
 
 .nav-link:hover {
