@@ -1,39 +1,11 @@
-<!doctype html>
-<html>
-<head>
-    <title>遗世之都</title>
-    <meta charset="utf-8"/>
-    <link rel="stylesheet" href="http://necolas.github.com/normalize.css/2.1.0/normalize.css">
-    <link rel="stylesheet" href="global/global.css">
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-</head>
-<body>
-<header id="header">
-    <nav id="nav">
-        <ul class="nav-list l-right">
-            <li class="nav-item"><a class="nav-link s-active" href="#">HOME</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">ARTICLE</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">DEMO</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">PROJECT</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">SHARE</a></li>
-        </ul>
-    </nav>
-    <section id="guard-pic"></section>
-</header>
-<section id="main">
-    <article>
-        <h2 class="title">{{page.title}}</h2>
-        <p>最新文章</p>
-        　　<ul>
-        　　　　{% for post in site.posts %}
-        　　　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-        　　　　{% endfor %}
-        　　</ul>
-        <!--<section class="content">{{content}}</section>-->
-    </article>
-</section>
-<footer id="footer">
-
-</footer>
-</body>
-</html>
+---
+layout: default
+title: 我的Blog
+---
+　　<h2 class="title">{{ page.title }}</h2>
+　　<p>最新文章</p>
+　　<ul>
+    　　　　{% for post in site.posts %}
+    　　　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    　　　　{% endfor %}
+    </ul>
