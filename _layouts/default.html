@@ -11,7 +11,9 @@
 <header id="header">
     <nav id="nav">
         <ul class="nav-list l-right">
-            <li class="nav-item"><a class="nav-link s-active" href="#">HOME</a></li>
+            <li class="nav-item">
+                <a class="nav-link {% if page.HOME %} s-active {% endif %}" href="/">HOME</a>
+            </li>
             <li class="nav-item"><a class="nav-link" href="#">ARTICLE</a></li>
             <li class="nav-item"><a class="nav-link" href="#">DEMO</a></li>
             <li class="nav-item"><a class="nav-link" href="#">PROJECT</a></li>
@@ -21,9 +23,7 @@
     <section id="guard-pic"></section>
 </header>
 <section id="main">
-    <article>
-        <section class="content">{{content}}</section>
-    </article>
+    <section class="content">{{content}}</section>
 </section>
 <footer id="footer">
 

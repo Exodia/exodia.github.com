@@ -5,11 +5,19 @@ body {
 
 ul {
     list-style: none;
+}
+
+p, ul, h2, h3 {
     margin: 0;
+    padding: 0;
 }
 
 a {
+    color: #f4851c;
     text-decoration: none;
+}
+
+a:hover {
 }
 
 #main {
@@ -34,9 +42,8 @@ a {
 }
 
 .l-right {
-    float:right;
+    float: right;
 }
-
 
 .nav-item {
     float: left;
@@ -45,11 +52,11 @@ a {
 
 .nav-link {
     display: block;
-    padding:6px 15px;
+    padding: 6px 15px;
     border-radius: 30px;
     color: white;
     letter-spacing: -1px;
-    font:bold 21px Verdana;
+    font: bold 21px Verdana;
 }
 
 .nav-link:hover {
@@ -62,10 +69,18 @@ a {
 }
 
 h2.title {
+    padding-bottom: 10px;
     color: #fff;
+    font-size: 30px;
 }
 
-section.content {
+.article-list {
+    margin-top: -30px;
+}
+
+.content {
     color: #bcedf1;
 }
+
+
 

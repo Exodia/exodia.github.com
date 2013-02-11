@@ -1,10 +1,10 @@
 ---
 layout: default
 title: 我的Blog
+HOME: 1
 ---
-　　<h2 class="title">{{ page.title }}</h2>
-　　<p>最新文章</p>
-　　<ul>
+　　<h2 class="title">最新文章</h2>
+　　<ul class="article-list">
     　　　　{% for post in site.posts %}
     　　　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
     　　　　{% endfor %}
