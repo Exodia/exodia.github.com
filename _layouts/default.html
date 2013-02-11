@@ -9,19 +9,24 @@
 </head>
 <body>
 <header id="header">
-<nav id="nav">
-    <ul class="nav-list l-right">
-        <li class="nav-item"><a>Home</a></li>
-        <li class="nav-item"><a>Article</a></li>
-        <li class="nav-item"><a>Demo</a></li>
-        <li class="nav-item"><a>Project</a></li>
-    </ul>
-</nav>
+    <nav id="nav">
+        <ul class="nav-list l-right">
+            <li class="nav-item"><a class="nav-link s-active" href="#">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">ARTICLE</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">DEMO</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">PROJECT</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">SHARE</a></li>
+        </ul>
+    </nav>
+    <section id="guard-pic"></section>
 </header>
-<div id="main">
-
-</div>
-<footer id="#footer">
+<section id="main">
+    <article>
+        <h2 class="title">{{page.title}}</h2>
+        <section class="content">{{content}}</section>
+    </article>
+</section>
+<footer id="footer">
 
 </footer>
 </body>

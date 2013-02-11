@@ -1,5 +1,6 @@
 body {
     background: url(../images/bgr.jpg) top center no-repeat #101620;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 ul {
@@ -11,6 +12,10 @@ a {
     text-decoration: none;
 }
 
+#main {
+    width: 960px;
+    margin: 0 auto;
+}
 
 #footer {
     background: url(../images/featured-light.jpg);
@@ -54,5 +59,13 @@ a {
 .nav-link.s-active {
     color: #fff;
     background: #ff9000;
+}
+
+h2.title {
+    color: #fff;
+}
+
+section.content {
+    color: #bcedf1;
 }
 
