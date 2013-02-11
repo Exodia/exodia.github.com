@@ -45,6 +45,9 @@ a:hover {
     float: right;
 }
 
+.l-left {
+    float: left;
+}
 .nav-item {
     float: left;
     margin-left: 5px;
@@ -68,12 +71,6 @@ a:hover {
     background: #ff9000;
 }
 
-h2.title {
-    padding-bottom: 10px;
-    color: #fff;
-    font-size: 30px;
-}
-
 .article-list {
     margin-top: -30px;
 }
@@ -82,5 +79,9 @@ h2.title {
     color: #bcedf1;
 }
 
-
+.content h2 {
+    padding-bottom: 10px;
+    color: #fff;
+    font-size: 30px;
+}
 
