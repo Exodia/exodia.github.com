@@ -9,7 +9,10 @@ title: 【译】使用PhantomJS测试JavaScript
 这意味着你需要在浏览器中测试代码而不能使用终端，对吗？错了，事实是：进入[PhantomJS](http://phantomjs.org/)。
 
 究竟PhantomJS是什么？好吧，这有一个来自PhantomJS网站的简介：
-    <em>PhantomJS是一个拥有JavaScript API的无界面WebKit。</em>
+
+####<em>PhantomJS是一个拥有JavaScript API的无界面WebKit。</em>
+
+
 
 如你所知，Webkit是Chrome、Safari和其他一些小众浏览器使用的布局引擎。
 因此，PhantomJS是一个浏览器，而且是一个无界面的浏览器。这意味着，渲染后的网页实际上绝不会显示。
@@ -121,7 +124,9 @@ PhantomJS的测试驱动可用于几乎每一个你可能想使用的测试库�
 Rails开发人员应该试试[guard-jasmine](https://github.com/netzpirat/guard-jasmine) 。
 但除此之外，对Jasmine+ PhantomJS的支持非常稀疏。
 
-###<em>出于这个原因，我建议你使用Mocha进行D​​OM相关的测试。</em>
+####<em>出于这个原因，我建议你使用Mocha进行D​​OM相关的测试。</em>
+
+
 
 尽管如此，很可能你已经有一个项目在使用Jasmine ，并想与PhantomJS一起使用。
 有一个叫 [phantom-jasmine](https://github.com/jcarver989/phantom-jasmine)的项目 ，

@@ -12,6 +12,9 @@ p, ul, h2, h3 {
     padding: 0;
 }
 
+h1,h2,h3,h4,h5,h6 {
+    color: #fff;
+}
 
 #main {
     width: 960px;
@@ -79,19 +82,16 @@ p, ul, h2, h3 {
 
 .content h1 {
     padding-bottom: 10px;
-    color: #fff;
     text-align: center;
     font-size: 30px;
 }
 
 .content h2 {
     padding: 10px 0;
-    color: #fff;
 }
 
-.content h3 {
+.content h4, .content h3 {
     text-indent: 2em;
-    color: #fff;
 }
 
 .content p {
