@@ -13,6 +13,7 @@ document.body.onkeydown = function(ev) {
 
 ##重现环境
 浏览器：webkit内核的浏览器：chrome、safari
+
 有道词典： 版本5.1
 ##重现步骤
 鼠标双击或者鼠标拖拽释放
