@@ -17,6 +17,8 @@ document.body.onkeydown = function(ev) {
 有道词典： 版本5.1
 ##重现步骤
 鼠标双击或者鼠标拖拽释放
+##产生结果
+控制台输出true
 ##解决方案
 将有道词典完全关闭
 ##总结
