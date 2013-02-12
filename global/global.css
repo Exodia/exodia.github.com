@@ -75,7 +75,11 @@ a:hover {
     margin-top: -30px;
 }
 
-.content {
+.highlight {
+    margin-left: 2em;
+}
+
+.content p {
     color: #bcedf1;
 }
 
@@ -85,3 +89,22 @@ a:hover {
     font-size: 30px;
 }
 
+.content h3 {
+    padding: 10px 0;
+    color: #fff;
+}
+
+.content h4 {
+    text-indent: 2em;
+    color: #fff;
+}
+
+.content p {
+    margin-bottom: 12px;
+    line-height: 20px;
+    text-indent: 2em;
+}
+
+.content strong {
+    color: #adff2f;
+}
