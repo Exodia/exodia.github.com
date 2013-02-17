@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <title>webkit-overflow-bug</title>
+    <script>
+        window.onload = function(){
+            document.getElementById("t1").onclick = function(){
+                var ctn = document.getElementById("ctn");
+                var c = document.getElementById("ctnChild");
+                ctn.style.overflow = "auto";
+                c.style.height = "600px";
+            };
+            document.getElementById("t2").onclick = function(){
+                var c = document.getElementById("ctnChild");
+                var ctn = document.getElementById("ctn");
+                //	c.style.height = "700px";  //可以对比下，当子元素比容器大的时候出现的情况，会发现依然可以滚动元素
+                c.style.height = "200px";
+                ctn.style.overflow = ""; //delete ctn.style.overflow; 用这句代替ctn.style.overflow = ""不会出现问题
+            };
+        };
+    </script>
+    <style>
+        #ctn{
+            border:2px solid red;
+            width:500px;
+            height:400px;
+            position:relative;
+        }
+
+        #ctnChild{
+            background-color:blue;
+            width:200px;
+            height:200px;
+            position:relative;
+        }
+    </style>
+</head>
+<body>
+<div id="ctn">
+    <div id="ctnChild"></div>
+</div>
+<input type="button" id="t1"  value="放大尺寸" />
+<input type="button" id="t2"  value="还原" />
+</body>
+</html>

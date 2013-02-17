@@ -1,5 +1,5 @@
 body {
-    background: url(../images/bgr.jpg) top center no-repeat #101620;
+    background: url(http://yunpan.alibaba.com/GetPhotoTag.do?fileId=24910996&showBig=true&aid=0&gid=0) top center no-repeat #101620;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -22,7 +22,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #footer {
-    background: url(../images/featured-light.jpg);
+    background: url(http://yunpan.alibaba.com/GetPhotoTag.do?fileId=24911236&showBig=true&aid=0&gid=0);
 }
 
 #nav {
@@ -34,7 +34,7 @@ h1,h2,h3,h4,h5,h6 {
     width: 960px;
     height: 230px;
     margin: 0 auto;
-    background: url("../images/digimurai.png") no-repeat center;
+    background: url(http://yunpan.alibaba.com/GetPhotoTag.do?fileId=24911235&showBig=true&aid=0&gid=0) no-repeat center;
 }
 
 .l-right {
@@ -92,6 +92,10 @@ h1,h2,h3,h4,h5,h6 {
 
 .content h4, .content h3 {
     text-indent: 2em;
+}
+
+.content ul, .content ol {
+    color: #bcedf1;
 }
 
 .content p {
