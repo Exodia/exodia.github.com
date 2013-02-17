@@ -22,7 +22,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #footer {
-    background: url(../images/featured-light.jpg);
+    background: url(http://yunpan.alibaba.com/GetPhotoTag.do?fileId=24911236&showBig=true&aid=0&gid=0);
 }
 
 #nav {
@@ -34,7 +34,7 @@ h1,h2,h3,h4,h5,h6 {
     width: 960px;
     height: 230px;
     margin: 0 auto;
-    background: url("../images/digimurai.png") no-repeat center;
+    background: url(http://yunpan.alibaba.com/GetPhotoTag.do?fileId=24911235&showBig=true&aid=0&gid=0) no-repeat center;
 }
 
 .l-right {

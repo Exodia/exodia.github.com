@@ -1,3 +1,3 @@
 $(function() {
-    console.log($('.content a').attr('target', '_blank'));
+    $('.content a').attr('target', '_blank');
 });
