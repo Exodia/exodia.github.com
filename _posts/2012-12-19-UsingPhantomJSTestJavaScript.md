@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [译]使用PhantomJS测试JavaScript
+title: \[译\]使用PhantomJS测试JavaScript
 ---
 #{{page.title}}
 我认为我不需要说服你，测试你的JavaScript代码是一个好主意。
