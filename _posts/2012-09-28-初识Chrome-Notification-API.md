@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 初识Chrome-Notification-API
+title: 初识Chrome Notification API
 ---
 #{{page.title}}
 chrome在很早之前就推出了桌面通知API，
