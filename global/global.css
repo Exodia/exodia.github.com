@@ -94,7 +94,7 @@ h1,h2,h3,h4,h5,h6 {
     text-indent: 2em;
 }
 
-.content ul {
+.content ul, .content ol {
     color: #fff;
 }
 
