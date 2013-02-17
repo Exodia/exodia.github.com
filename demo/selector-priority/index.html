@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>CSS优先级测试</title>
+    <style>
+        #test {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div id="test">
+    这是一个div，id为test
+</div>
+类添加次数：
+<input type="text" id="count" />
+<input type="button" id="add" value="添加" />
+<script>
+    document.getElementById('add').onclick = function() {
+        var t = document.getElementById('test');
+        var count = Number(document.getElementById('count').value);
+        var cls = '';
+        var css = '';
+        //加它个count个类,同时拼接CSS字符串
+        for (var i = 0; i < count; ++i) {
+            cls += 't' + i + ' ';
+            css += '.t' + i;
+        }
+        css += '{color: blue;}'
+        t.className = cls;
+        //插入规则
+        loadStyleString(css);
+    };
+
+    //插入一条css新规则
+    var loadStyleString = function(css) {
+        var style = document.createElement('style');
+        style.type = "text/css";
+        try {
+            style.appendChild(document.createTextNode(css));
+        } catch(e) {//IE
+            style.styleSheet.cssText = css;
+        }
+        document.getElementsByTagName('head')[0].appendChild(style);
+    }
+
+</script>
+</body>
+</html>
