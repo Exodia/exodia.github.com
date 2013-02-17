@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【译】使用PhantomJS测试JavaScript
+title: [译]使用PhantomJS测试JavaScript
 ---
 
 #{{page.title}}
