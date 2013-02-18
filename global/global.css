@@ -12,7 +12,7 @@ p, ul, h2, h3 {
     padding: 0;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
 
@@ -52,6 +52,7 @@ h1,h2,h3,h4,h5,h6 {
 .l-left {
     float: left;
 }
+
 .nav-item {
     float: left;
     margin-left: 5px;
@@ -76,8 +77,16 @@ h1,h2,h3,h4,h5,h6 {
     background: #ff9000;
 }
 
-.article-list {
-    margin-top: -30px;
+.left-col {
+    width: 60%;
+}
+
+.right-col {
+    width: 40%;
+}
+
+.article-list li {
+    margin-bottom: 12px;
 }
 
 .highlight {
