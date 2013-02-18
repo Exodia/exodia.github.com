@@ -61,6 +61,9 @@ position:relative;
 </body>  
 </html>  
 ```
+##重现环境
+safari5,chrome18
+##**注:chrome23+，以及最新版本的safari已无此bug，推测是webkit的版本更新修复了该bug**
 ##操作步骤
 点击放大尺寸按钮，再点击还原，再前后滚动滚轮。
 ###[惨无人道的点此进入DEMO](/demo/webkit-overflow-bug/)
