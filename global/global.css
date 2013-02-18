@@ -37,6 +37,14 @@ h1,h2,h3,h4,h5,h6 {
     background: url(http://yunpan.alibaba.com/GetPhotoTag.do?fileId=24911235&showBig=true&aid=0&gid=0) no-repeat center;
 }
 
+.highlight {
+    background: #333;
+    border: 5px solid #999;
+    padding: 0 15px;
+    margin: 2em;
+    overflow: auto;
+}
+
 .l-right {
     float: right;
 }
