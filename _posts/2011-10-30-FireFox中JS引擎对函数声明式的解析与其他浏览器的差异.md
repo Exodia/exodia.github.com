@@ -54,12 +54,12 @@ function foo() {}
 
 // function expression
 x = function hello() {}
-view plainprint?
+
 if (x) {
    // function expression
    function world() {}
 }
-view plainprint?
+
 // function declaration
 function a() {
    // function declaration
