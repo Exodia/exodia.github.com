@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2011年9月23日，百度前端面试题对话记录（3）
+title: FireFox中JS引擎对函数声明式的解析与其他浏览器的差异
 category: 前端 JavaScript 兼容性
 ---
 #{{page.title}}
