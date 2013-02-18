@@ -213,7 +213,7 @@ phantomjs lib/run\_jasmine\_test.coffee ./SpecRunner.html
 这里告诉了你如何在Bash shell中做到这一点：
 
 ```sh
-alias phantom-jasmine='phantomjs /path/to/run\_jasmine\_test.coffee
+alias phantom-jasmine='phantomjs /path/to/run\_jasmine\_test.coffee'
 ```
 
 只需丢在你的.bashrc或.bash_profile文件里。你只需要运行：
