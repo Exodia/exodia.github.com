@@ -1,7 +1,7 @@
 ---
 layout: post
 title: FireFox中JS引擎对函数声明式的解析与其他浏览器的差异
-category: 前端 JavaScript 兼容性
+category: 前端  JavaScript  兼容性
 ---
 #{{page.title}}
 在FireFox和FireBug中的一个Bug这篇文章中，偶然发现了FireFox下的函数声明问题，一直没有得到权威的资料来解决。
