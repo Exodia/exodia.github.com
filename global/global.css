@@ -53,6 +53,8 @@ h1, h2, h3, h4, h5, h6 {
     float: left;
 }
 
+
+
 .nav-item {
     float: left;
     margin-left: 5px;
@@ -85,12 +87,17 @@ h1, h2, h3, h4, h5, h6 {
     width: 40%;
 }
 
+
 .article-list li {
     margin-bottom: 12px;
 }
 
 .highlight {
     margin-left: 2em;
+}
+
+.content time {
+    margin-right: 5px;
 }
 
 .content p, .content time {
