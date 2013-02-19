@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>undefined</title>
+    <meta name="description" content="">
+    <meta name="author" content="Hakim El Hattab">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <link rel="stylesheet" href="reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="reveal.js/css/theme/default.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      document.write( '<link rel="stylesheet" href="reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+      
+        <section class="cover">
+          <h1>精通one, 了解more, 关注next</h1>
+<h1>了解more（1）</h1>
+
+        </section>
+      
+        <section class="">
+          <h2>工具</h2>
+<ol>
+<li>slidemate — <a href="https://github.com/JacksonTian/slidemate">快速制作PPT</a></li>
+<li>JSONView — 可视化的JSON数据阅读器</li>
+<li>Markdown Reader — 美化MD文本</li>
+<li>印象笔记-阅读 — 摘录文章</li>
+<li>Read Later — 碎片阅读</li>
+</ol>
+
+        </section>
+      
+        <section class="">
+          <h2>领域特定语言(DSL)</h2>
+<ol>
+<li>Less</li>
+<li>SASS</li>
+<li>Stylus</li>
+</ol>
+
+        </section>
+      
+        <section class="">
+          <h2>无界面浏览器PhantomJS</h2>
+<ol>
+<li>自动化测试</li>
+<li>网站抓取（Site scraping）</li>
+<li>网页截屏（Page rendering）</li>
+<li>网络监控（Network monitoring）</li>
+</ol>
+
+        </section>
+      
+        <section class="">
+          <h2>CSS3动画框架<br><a href="http://daneden.me/animate/">animate.css</a></h2>
+
+        </section>
+      
+        <section class="">
+          <h2>华丽的框架Ext</h2>
+<ol>
+<li>Ext Framework</li>
+<li>Sencha Architect（Ext Designer）</li>
+</ol>
+
+        </section>
+      
+        <section class="">
+          <h2>Ext Framework</h2>
+<ol>
+<li>体系架构</li>
+<li>文档展现形式</li>
+</ol>
+
+        </section>
+      
+        <section class="">
+          <h2>Sencha Architect（Ext Designer)</h2>
+<ol>
+<li>成熟的组件体系</li>
+<li>成熟的布局系统</li>
+</ol>
+
+        </section>
+      
+      </div>
+    </div>
+
+    <script src="reveal.js/lib/js/head.min.js"></script>
+    <script src="reveal.js/js/reveal.min.js"></script>
+
+    <script>
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+            keyboard: true,
+            rollingLinks: true,
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'zoom', // default/cube/page/concave/zoom/linear/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+    </script>
+  </body>
+</html>
