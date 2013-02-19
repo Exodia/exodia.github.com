@@ -16,6 +16,11 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
 
+#header {
+   width: 960px;
+   margin: 35px auto 0 auto;
+}
+
 #main {
     width: 960px;
     margin: 0 auto;
@@ -27,7 +32,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #nav {
     overflow: hidden;
-    margin: 35px 220px 0 0;
 }
 
 #guard-pic {
