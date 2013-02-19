@@ -75,4 +75,4 @@ with(_FirebugCommandLine){
 };
 ```
 关于不同JS引擎的语句块内函数声明的解析差异可见我的另一篇博文
-[FireFox中JS引擎对函数声明式的解析与其他浏览器的差异](/前端  JavaScript  兼容性/2011/10/30/FireFox中JS引擎对函数声明式的解析与其他浏览器的差异.html)
+[FireFox中JS引擎对函数声明式的解析与其他浏览器的差异](/前端 JavaScript 兼容性/2011/10/30/FireFox中JS引擎对函数声明式的解析与其他浏览器的差异.html)

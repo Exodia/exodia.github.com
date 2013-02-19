@@ -1,10 +1,11 @@
 ---
 layout: post
 title: FireFox中JS引擎对函数声明式的解析与其他浏览器的差异
-category: 前端  JavaScript  兼容性
+category: 前端 JavaScript 兼容性
 ---
 #{{page.title}}
-在FireFox和FireBug中的一个Bug这篇文章中，偶然发现了FireFox下的函数声明问题，一直没有得到权威的资料来解决。
+在[FireFox和FireBug中的一个Bug](/前端 JavaScript 兼容性/2011/09/03/FireFox和FireBug的一个BUG.html)
+这篇文章中，偶然发现了FireFox下的函数声明问题，一直没有得到权威的资料来解决。
 11月26日面试新浪微博的时候，面试官也问到了这个问题，当然他没看我的BLOG，并从他口中得知，这个不是BUG，而是FF的Monkey引擎就是这样解析的，
 当然我的回答是：“个人推测，在FF下对语句快内的函数声明转化为函数表达式”。
 面试官说不是，当然也没给出具体答案，提示我说MDN有这方面的资料。
