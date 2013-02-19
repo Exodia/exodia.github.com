@@ -37,13 +37,13 @@ function a(){
 ```
 <del>隐约记得半年前在网上看到一个老外的帖子说FireBug console是用eval执行输入的代码的，不过具体忘记了，最近去搜也没搜到。
 在这里个人推测下，FireBug是按语句一条一条eval的， 也就是上面代码变为：</del>
-<del>
+
 ```javascript
 eval('var a = 1');
 eval('function a(){alert(1111);}');
 eval('alert(a)');
 ```
-</del>
+
 <del>而eval是将执行的语句加入到最近作用域中，按上述的方式，每条语句都是立即执行，自然就是弹出函数代码了。
 自此，FireBug的解析问题也许有一个推测的答案，希望有更权威的文献论证。</del>
 
