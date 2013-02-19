@@ -1,6 +1,5 @@
-#精通one, 了解more, 关注next
-#关注next —— EcmaScript.next(1)
-
+精通one, 了解more, <font color=red>关注next</font> — EcmaScript.next(1)
+======
 ##Support Tools
 [Chrome Canary](https://www.google.com/intl/en/chrome/browser/canary.html)
 
@@ -60,7 +59,8 @@ function f1(...rest) {
 f1()
 ```
 
-##bind的简单实现—未使用剩余参数：
+##bind的简单实现
+未使用剩余参数：
 ```
 function bind(fn, scope) {
     var args = Array.prototype.slice.call(arguments, 2);
@@ -71,7 +71,8 @@ function bind(fn, scope) {
 }
 ```
 
-##bind的简单实现—使用剩余参数：
+##bind的简单实现
+使用剩余参数：
 ```
 function bind(fn, scope, ...args) {
     return function(...rest) {

@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>EcmaScript.next(1)</title>
+    <title>精通one, 了解more, &lt;font color=red&gt;关注next&lt;/font&gt; — EcmaScript.next(1)</title>
     <meta name="description" content="">
     <meta name="author" content="Hakim El Hattab">
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -28,8 +28,7 @@
       <div class="slides">
       
         <section class="cover">
-          <h1>精通one, 了解more, 关注next</h1>
-<h1>关注next —— EcmaScript.next(1)</h1>
+          <h1>精通one, 了解more, <font color=red>关注next</font> — EcmaScript.next(1)</h1>
 
         </section>
       
@@ -99,7 +98,8 @@ f1()</code></pre>
         </section>
       
         <section class="">
-          <h2>bind的简单实现—未使用剩余参数：</h2>
+          <h2>bind的简单实现</h2>
+<p>未使用剩余参数：</p>
 <pre><code>function bind(fn, scope) {
     var args = Array.prototype.slice.call(arguments, 2);
 
@@ -111,7 +111,8 @@ f1()</code></pre>
         </section>
       
         <section class="">
-          <h2>bind的简单实现—使用剩余参数：</h2>
+          <h2>bind的简单实现</h2>
+<p>使用剩余参数：</p>
 <pre><code>function bind(fn, scope, ...args) {
     return function(...rest) {
         fn.apply(scope, args.concat(rest));
