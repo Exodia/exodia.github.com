@@ -110,8 +110,12 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 5px;
 }
 
-.content p, .content time {
+.content p {
     color: #5db0e6;
+}
+
+.content time, .blog-action p{
+    color: #bcedf1;
 }
 
 .content h1 {
