@@ -1,6 +1,6 @@
 body {
     background: url(http://yunpan.alibaba.com/share/scan.do?info=J91JgcWUG&pInfo=J91JgcWUG&app_name=) top center no-repeat #101620;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Microsoft YaHei";
 }
 
 ul {
@@ -24,6 +24,8 @@ h1, h2, h3, h4, h5, h6 {
 #main {
     width: 960px;
     margin: 0 auto;
+    overflow: hidden;
+    _zoom :1;
 }
 
 #footer {
