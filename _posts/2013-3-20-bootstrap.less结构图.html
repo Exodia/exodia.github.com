@@ -14,14 +14,10 @@
 </head>
 <body>
 <div id="main">
+    <iframe width="600" height="400" frameborder="0"
+            src="http://www.mindmeister.com/maps/public_map_shell/272988441/bootstrap-less?width=600&height=400&z=auto"
+            scrolling="no" style="overflow:hidden">
+    </iframe>
 </div>
-<script type="text/javascript" src="/libs/datav/all.js"></script>
-<script type="text/javascript">
-    var tree = new Tree("main", {width:960});
-    DataV.csv("/data/bootstrap.csv", function(source){
-        tree.setSource(source);
-        tree.render();
-    });
-</script>
 </body>
 </html>
