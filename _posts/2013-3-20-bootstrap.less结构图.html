@@ -18,7 +18,7 @@
 <script type="text/javascript" src="/libs/datav/all.js"></script>
 <script type="text/javascript">
     var tree = new Tree("main", {width:960});
-    DataV.csv("/data/bootstrap.less.csv", function(source){
+    DataV.csv("/data/bootstrap.csv", function(source){
         tree.setSource(source);
         tree.render();
     });
