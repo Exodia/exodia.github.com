@@ -17,7 +17,11 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
 
-p img {
+.img-wrap {
+    text-align: center;
+}
+
+.img-wrap img {
     max-width: 100%;
     -ms-interpolation-mode: bicubic;
     text-align: center;
