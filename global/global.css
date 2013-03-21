@@ -61,8 +61,16 @@ h1, h2, h3, h4, h5, h6 {
     background: #333;
     border: 5px solid #999;
     padding: 0 15px;
-    margin: 2em;
+    margin:2em 0;
     overflow: auto;
+}
+
+@media screen and (max-width:480px) {
+    .highlight {
+        border-width: 2px;
+        padding: 0 5px;
+        margin:1em 0;
+    }
 }
 
 .l-right {
