@@ -17,9 +17,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
 
-img {
+p img {
     max-width: 100%;
     -ms-interpolation-mode: bicubic;
+    text-align: center;
 }
 
 #header {
