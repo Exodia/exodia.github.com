@@ -109,12 +109,14 @@ h1, h2, h3, h4, h5, h6 {
     min-width: 320px;
     white-space: nowrap;
     text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .right-col {
     width: 40%;
     min-width: 320px;
     white-space: nowrap;
+    overflow: hidden;
     text-overflow: ellipsis;
 }
 
