@@ -111,12 +111,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .left-col {
-    width: 55%;
+    width: 65%;
     min-width: 320px;
 }
 
 .right-col {
-    width: 40%;
+    width: 35%;
     min-width: 320px;
 }
 
