@@ -105,11 +105,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .left-col {
+    margin: 0 auto;
     width: 60%;
     min-width: 320px;
 }
 
 .right-col {
+    margin: 0 auto;
     width: 40%;
     min-width: 320px;
 }
@@ -166,7 +168,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #adff2f;
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:768px) {
     .highlight {
         border-width: 2px;
         padding: 0 5px;
