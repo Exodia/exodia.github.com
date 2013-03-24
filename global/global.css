@@ -178,7 +178,11 @@ h1, h2, h3, h4, h5, h6 {
         padding: 0 5px;
         margin:1em 0;
     }
+    .left-col {
+        width: 100%;
+    }
     .right-col {
+        width: 100%;
         float: left;
     }
 }
