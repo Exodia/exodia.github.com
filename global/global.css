@@ -108,12 +108,14 @@ h1, h2, h3, h4, h5, h6 {
     width: 60%;
     min-width: 320px;
     white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .right-col {
     width: 40%;
     min-width: 320px;
     white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .article-list li {
@@ -174,11 +176,7 @@ h1, h2, h3, h4, h5, h6 {
         padding: 0 5px;
         margin:1em 0;
     }
-    .left-col {
-        margin-left: 20%;
-    }
     .right-col {
         float: left;
-        margin-left: 30%;
     }
 }
