@@ -23,6 +23,7 @@
     #d2 {
         width: 100px;
         height: 100px;
+        position: fixed;
         background: blue;
     }
 </style>
@@ -38,13 +39,30 @@
         if (!this.classList.contains('collapse')) {
             this.style.width = '15px';
             this.style.height = '20px';
+            this.style.background = 'red';
             this.classList.add('collapse');
         } else {
             this.style.width = '100px';
             this.style.height = '300px';
+            this.style.background = 'green';
             this.classList.remove('collapse');
         }
     }
+
+    document.querySelector('#d2').onclick = function () {
+        if (!this.classList.contains('runned')) {
+            this.style.left = '200px';
+            this.style.top = '300px';
+            this.style.background = 'red';
+            this.classList.add('runned');
+        } else {
+            this.style.left = '0';
+            this.style.top = '0';
+            this.style.background = 'blue';
+            this.classList.remove('runned');
+        }
+    }
+
 
 </script>
 </body>
