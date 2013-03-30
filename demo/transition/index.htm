@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transition Demo</title>
+</head>
+<style type="text/css">
+    .transition {
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        -ms-transition: all 1s;
+        transition: all 1s;
+    }
+
+    #d1 {
+        width: 100px;
+        height: 300px;
+        background: green;
+        position: fixed;
+        right: 0;
+
+    }
+
+    #d2 {
+        width: 100px;
+        height: 100px;
+        background: blue;
+    }
+</style>
+<body>
+<div id="d1" class="transition">
+    Have A Funny Day!
+</div>
+<div id="d2" class="transition">
+    Whose your Daddy!
+</div>
+<script type="text/javascript">
+    document.querySelector('#d1').onclick = function () {
+        if (!this.classList.contains('collapse')) {
+            this.style.width = '15px';
+            this.style.height = '20px';
+            this.classList.add('collapse');
+        } else {
+            this.style.width = '100px';
+            this.style.height = '300px';
+            this.classList.remove('collapse');
+        }
+    }
+
+</script>
+</body>
+</html>
