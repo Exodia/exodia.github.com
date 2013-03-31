@@ -5,10 +5,10 @@
 </head>
 <style type="text/css">
     .transition {
-        -webkit-transition: all 1s;
-        -moz-transition: all 1s;
-        -ms-transition: all 1s;
-        transition: all 1s;
+        -webkit-transition: all .7s;
+        -moz-transition: all .7s;
+        -ms-transition: all .7s;
+        transition: all .7s;
     }
 
     #d1 {
@@ -38,7 +38,7 @@
     document.querySelector('#d1').onclick = function () {
         if (!this.classList.contains('collapse')) {
             this.style.width = '15px';
-            this.style.height = '20px';
+            this.style.height = '100px';
             this.style.background = 'red';
             this.classList.add('collapse');
         } else {
@@ -50,17 +50,18 @@
     }
 
     document.querySelector('#d2').onclick = function () {
-        if (!this.classList.contains('runned')) {
-            this.style.left = '200px';
-            this.style.top = '300px';
-            this.style.background = 'red';
-            this.classList.add('runned');
-        } else {
-            this.style.left = '0';
-            this.style.top = '0';
-            this.style.background = 'blue';
-            this.classList.remove('runned');
-        }
+        this.style.left = '200px';
+        this.style.top = '300px';
+        this.style.background = 'red';
+
+        var me = this;
+        setTimeout(function () {
+            me.style.left = '400px';
+            me.style.top = '0';
+        }, 500);
+        setTimeout(function () {
+            me.style.left = '0';
+        }, 1200);
     }
 
 
