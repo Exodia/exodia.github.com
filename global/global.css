@@ -150,6 +150,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .content ul, .content ol {
     color: #bcedf1;
+    line-height: 20px;
 }
 
 .content p {
