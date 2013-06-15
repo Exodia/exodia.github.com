@@ -43,6 +43,7 @@ e-mail: d_xinxin@163.com
 
 * 角色： 前端PM
 
+
 ####KISSY Gallery生态圈建设 2013/03 - 2013/05
 
 提高第三方对淘宝KISSY框架的建设热情与参与度
@@ -50,6 +51,7 @@ e-mail: d_xinxin@163.com
 * 职责：gallery首页的开发(gallery.kissyui.com)
 
 * 角色：项目推动者与文档组工作开发
+
 
 ####淘宝网-爱淘-爱优惠  2013/01 - 2013/02
 
@@ -59,6 +61,7 @@ e-mail: d_xinxin@163.com
 
 * 角色：前端开发
 
+
 ####淘宝网-爱淘-逛周边  2012/09 - 2013/12
 
 基于用户地理位置信息, 根据周边的人的购物信息, 给用户提供相关商品推荐(找同款, 找搭配, 找店铺)
@@ -66,6 +69,7 @@ e-mail: d_xinxin@163.com
 * 职责：独立完成前端开发工作
 
 * 角色：前端开发
+
 
 ####UITester 2012/11 - 2012/12
 
@@ -75,13 +79,16 @@ e-mail: d_xinxin@163.com
 
 * 角色：前端开发
 
+
 ####NoSelector 2012/08 - 2013/10
 
 一款测试录制工具(chrome插件)，与淘宝网内部大范围使用的Automan与AutomanX自动化测试框架整合，
 方便测试人员更块的编写测试用例
 
 * 职责：完成NoSelector的前端工作, 包括选择器生成器, 反向验证, iframe的路径整合
+
 * 角色：前端开发
+
 
 ###厦门大学
 
@@ -94,6 +101,7 @@ e-mail: d_xinxin@163.com
 
 * 角色：独立开发者
 
+
 ####LaneCat网络行为管理系统 2010/06 - 2012/04
 
 基于B/S架构的网络管理系统。利用快速抓包与解析（支持千兆网）、深度包分析、音视频解码、IPV6兼容等核心技术，
@@ -103,19 +111,23 @@ e-mail: d_xinxin@163.com
 
 * 角色：web开发
 
+
 ###个人项目
 
 ####[Mqa](https://github.com/Exodia/mqa)
 
 媒体查询别名库，更方便的使用matchMedia。
 
+
 ####[TowTruck For Chrome](https://github.com/Exodia/chrome-ext/tree/master/tow)
 
 chrome插件, FireFox [TowTruck](http://towtruck.mozillalabs.com/)项目的chrome插件版
 
+
 ####[waterfallx](https://github.com/Exodia/waterfallx)
 
 瀑布流布局组件， 基于inline-block布局的瀑布流， 更方便的前向插入，无需预设容器高度
+
 
 ###[Web Notification](https://github.com/Exodia/notification)
 
