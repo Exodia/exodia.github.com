@@ -17,7 +17,7 @@ e-mail: d_xinxin@163.com
 
 2004/08 - 2008/06， 本科， 就读于浙江工业大学自动化专业
 
-##工作经历 <br>
+##工作经历
 
 
 ###2012/07至今，淘宝UED-前端工程师，花名踏风。
@@ -29,10 +29,10 @@ e-mail: d_xinxin@163.com
 
 * 热爱新技术的研究，开发效率的改进
 
-##项目经历 <br>
+##项目经历
 
 
-###淘宝 <br>
+###淘宝
 
 
 ####淘宝网-[新版个人主页](http://my.taobao.com) 2013/04 - 2013/05
@@ -42,7 +42,6 @@ e-mail: d_xinxin@163.com
 * 职责： 负责并完成新版个人主页的前端开发工作以及多终端适配；协同6个前端，2个子项目的合作开发，推动整个项目的顺利上线
 
 * 角色： 前端PM
-<br>
 
 
 ####KISSY Gallery生态圈建设 2013/03 - 2013/05
@@ -52,7 +51,6 @@ e-mail: d_xinxin@163.com
 * 职责：gallery首页的开发(gallery.kissyui.com)
 
 * 角色：项目推动者与文档组工作开发
-<br>
 
 
 ####淘宝网-爱淘-爱优惠  2013/01 - 2013/02
@@ -62,7 +60,6 @@ e-mail: d_xinxin@163.com
 * 职责：独立完成前端开发工作
 
 * 角色：前端开发
-<br>
 
 
 ####淘宝网-爱淘-逛周边  2012/09 - 2013/12
@@ -72,7 +69,6 @@ e-mail: d_xinxin@163.com
 * 职责：独立完成前端开发工作
 
 * 角色：前端开发
-<br>
 
 
 ####UITester 2012/11 - 2012/12
@@ -82,7 +78,6 @@ e-mail: d_xinxin@163.com
 * 职责：回归系统搭建与开发，相关技术解决方案的研究
 
 * 角色：前端开发
-<br>
 
 
 ####NoSelector 2012/08 - 2013/10
@@ -93,11 +88,9 @@ e-mail: d_xinxin@163.com
 * 职责：完成NoSelector的前端工作, 包括选择器生成器, 反向验证, iframe的路径整合
 
 * 角色：前端开发
-<br>
 
 
-###厦门大学  <br>
-
+###厦门大学
 
 ####QLOVE(腾讯WEBQQ3.0应用) 2011/5 - 2011/6
 
@@ -107,7 +100,7 @@ e-mail: d_xinxin@163.com
 * 职责：整个项目的策划与开发搭建到最终上线
 
 * 角色：独立开发者
-<br>
+
 
 ####LaneCat网络行为管理系统 2010/06 - 2012/04
 
@@ -117,26 +110,23 @@ e-mail: d_xinxin@163.com
 * 职责：根据需求, 完成相关组件的前后端开发
 
 * 角色：web开发
-<br>
+
 
 ###个人项目
 
 ####[Mqa](https://github.com/Exodia/mqa)
 
 媒体查询别名库，更方便的使用matchMedia。
-<br>
 
 
 ####[TowTruck For Chrome](https://github.com/Exodia/chrome-ext/tree/master/tow)
 
 chrome插件, FireFox [TowTruck](http://towtruck.mozillalabs.com/)项目的chrome插件版
-<br>
 
 
 ####[waterfallx](https://github.com/Exodia/waterfallx)
 
 瀑布流布局组件， 基于inline-block布局的瀑布流， 更方便的前向插入，无需预设容器高度
-<br>
 
 
 ###[Web Notification](https://github.com/Exodia/notification)
