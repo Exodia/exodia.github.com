@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>undefined</title>
+    <meta name="description" content="">
+    <meta name="author" content="Hakim El Hattab">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <link rel="stylesheet" href="reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="reveal.js/css/theme/default.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      document.write( '<link rel="stylesheet" href="reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+      
+        <section class="cover">
+          <h1>Web Font</h1>
+<p>能够让网页展示用户机器上不存在的字体</p>
+<p>对我们而言最直接的优势在于字体图标</p>
+
+        </section>
+      
+        <section class="">
+          <h2>历史</h2>
+<p>CSS2.1就已经引入, 且IE4就已经支持</p>
+
+        </section>
+      
+        <section class="">
+          <h2>@font-face Rule</h2>
+<p>通过@font-face引入web字体</p>
+<pre><code class="lang-css">@font-face {
+    font-family: name;
+    src: local(&#39;fontname&#39;), url(&#39;/path/filename.otf&#39;) format(&#39;&#39;opentype)
+}</code></pre>
+
+        </section>
+      
+        <section class="">
+          <h2>使用</h2>
+<pre><code class="lang-css">E {
+    font-family: name;
+}</code></pre>
+
+        </section>
+      
+        <section class="">
+          <h2>font-weight与font-style</h2>
+<p>未提供相关的itaic和bold形式字体, 浏览器会对部分元素的显示做机器转换</p>
+<pre><code class="lang-css">em {
+    font-style: normal;
+}
+
+strong {
+    font-weight: normal;
+}</code></pre>
+
+        </section>
+      
+        <section class="">
+          <h2>兼容性</h2>
+<p>IE8以下不支持local(), 字体格式仅支持eot;</p>
+<p>IE8以下会对url字符后的串解析成url, 发起字体请求, 自然是一个无用的404</p>
+<p>MAC Safari5.03, 使用了local,字体管理器会弹出对话框向用户请求权限</p>
+<p>解决方案:</p>
+<pre><code class="lang-css">@font-face {
+ font-family: name;
+ src: url(&#39;filename.eot&#39;);
+ src: local(&#39;?&#39;), url(&#39;/path/filename.otf&#39;) format(&#39;opentype&#39;)
+}</code></pre>
+
+        </section>
+      
+        <section class="">
+          <h2>font format</h2>
+<p>EOT: IE</p>
+<p>WOFF: IE9+, FF20+, Chrome26+, Safari: 5.1+, Opera: 12.1+, IOS Safari: 5.0+;</p>
+<p>SVG: Chrome26+, Safari5.1+, Opera: 12.1+, IOS Safari: 3.2+, Android 3.0+;</p>
+<p>TTF/OTF: IE9.0+, FF20+, Chrome26+,  Safari5.1+, Opera: 12.1+, IOS Safari: 4.2+, Android 2.2+;</p>
+
+        </section>
+      
+        <section class="">
+          <h2>字体格式兼容解决方案:</h2>
+<pre><code class="lang-css">@font-face {
+  font-family: name;
+  src: url(&#39;filename.eot&#39;);
+  src: local(&#39;?&#39;),
+    url(&quot;filename.woff&quot;) format(&quot;woff&quot;),
+    url(&quot;filename.otf&quot;) format(&quot;opentype&quot;),
+    url(&quot;filename.svg#svgFontName&quot;) format(&quot;svg&quot;);
+}</code></pre>
+
+        </section>
+      
+        <section class="">
+          <h2>跨域问题</h2>
+<p>FF与IE会允许跨域web fonts</p>
+<p>解决方案:</p>
+<ol>
+<li><p>服务端设置允许跨域访问资源</p>
+</li>
+<li><p>data-url形式引入</p>
+</li>
+</ol>
+
+        </section>
+      
+        <section class="">
+          <h2>在项目中使用web font</h2>
+<ol>
+<li><p>让设计师去<a href="http://ux.etao.com/fonts">一淘字体库</a>选择字体</p>
+</li>
+<li><p>下载相关字体压缩包, 发布cdn</p>
+</li>
+<li><p>通过@font-face引入</p>
+</li>
+<li><p>跨域问题可通过引用t.tbcdn.cn或转化为base64解决</p>
+</li>
+</ol>
+
+        </section>
+      
+      </div>
+    </div>
+
+    <script src="reveal.js/lib/js/head.min.js"></script>
+    <script src="reveal.js/js/reveal.min.js"></script>
+
+    <script>
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+            keyboard: true,
+            rollingLinks: true,
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'zoom', // default/cube/page/concave/zoom/linear/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+    </script>
+  </body>
+</html>
