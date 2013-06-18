@@ -81,7 +81,7 @@ TTF/OTF: IE9.0+, FF20+, Chrome26+,  Safari5.1+, Opera: 12.1+, IOS Safari: 4.2+, 
 
 ##跨域问题
 
-FF与IE会允许跨域web fonts
+FF与IE不允许跨域web fonts
 
 解决方案:
 
