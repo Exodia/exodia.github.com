@@ -9,7 +9,7 @@ HOME: 1
             {% for post in site.posts %}
         <li>
             <time>{{ post.date | date_to_string }}</time>
-            <a href="/{{post.url}}" target="_blank">{{ post.title }}</a>
+            <a href="{{post.url}}" target="_blank">{{ post.title }}</a>
         </li>
             {% endfor %}
     </ul>
