@@ -81,6 +81,8 @@ e-mail: d_xinxin@163.com
 
 * 角色：前端开发
 
+* [赛马PPT](/share/noselector.pdf)
+
 
 ####NoSelector 2012/08 - 2013/10
 
