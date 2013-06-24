@@ -81,9 +81,6 @@ e-mail: d_xinxin@163.com
 
 * 角色：前端开发
 
-* [赛马PPT](/share/noselector.pdf)
-
-
 ####NoSelector 2012/08 - 2013/10
 
 一款测试录制工具(chrome插件)，与淘宝网内部大范围使用的Automan与AutomanX自动化测试框架整合，
@@ -92,6 +89,8 @@ e-mail: d_xinxin@163.com
 * 职责：完成NoSelector的前端工作, 包括选择器生成器, 反向验证, iframe的路径整合
 
 * 角色：前端开发
+
+* [赛马PPT](/share/noselector.pdf)
 
 
 ###厦门大学
