@@ -138,13 +138,13 @@ web notification 封装，使各个浏览器的表现更为一致，提供更简
 
 ###部分分享(其余正在整理。。)
 
-1.[Async Javascript](/share/one/1/slides/)
+* [Async Javascript](/share/one/1/slides/)
 
-2.[Web Font](/share/one/2/slides/)
+* [Web Font](/share/one/2/slides/)
 
-3.[杂](/share/more/1/slides/)
+* [杂](/share/more/1/slides/)
 
-4.[EcmaScript.next(1)](/share/next/1/slides/)
+* [EcmaScript.next(1)](/share/next/1/slides/)
 
 
 
