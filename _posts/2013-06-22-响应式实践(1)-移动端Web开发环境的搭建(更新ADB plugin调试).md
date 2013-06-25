@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 响应式实践(1)-移动端Web开发环境的搭建(更新ADB plugin调试)
+title: 响应式实践(1)-移动端Web开发环境的搭建(更新ADB-plugin调试)
 category: 多终端
 ---
 #{{page.title}}
