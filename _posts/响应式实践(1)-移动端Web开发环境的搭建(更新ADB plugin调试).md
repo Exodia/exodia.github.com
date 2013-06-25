@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 移动端Web开发环境搭建实践
+title: 响应式实践(1)-移动端Web开发环境的搭建(更新ADB plugin调试)
 category: 多终端
 ---
 #{{page.title}}
@@ -19,6 +19,8 @@ PC机上安装该chrome插件；在手机端安装chrome浏览器，登录chrome
 ##2-1. 调试—有线
 
 ###Android chrome + Wndows/Mac OS
+
+####Android SDK
 
 (1) 安装Android SDK
 
@@ -44,6 +46,22 @@ adb forwrad tcp:<port> localabstract:chrome_devetools_remote
 
 ***注：启动服务遇到错误的情况, 运行adb kill-server。
 iOS Chrome不支持这种方式调试***
+
+####ADB Plugin + MAC(2013-6-24更新)
+
+今天偶然发现了这个方案, 有MAC的同学可以完全取代上面的使用SDK调试方法, 毕竟每次启动命令行挺麻烦的. 步骤如下:
+(1)下载 Chrome Canary
+
+(2)下载 ADB Plugin 并安装在Chrome Canary上
+
+(3) 开启手机 "USB调试模式"
+
+注: 若手机已经开启过, 可以先关闭再开启, 避免手机没有记录下你机器的物理地址.
+
+(4) 开启手机chrome USB网页调试
+
+(5)点击ADB插件, 有惊喜.
+
 
 ###iOS Safari + MAC
 
