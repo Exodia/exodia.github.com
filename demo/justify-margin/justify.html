@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>自适应间距布局</title>
+    <meta charset="utf-8">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            width: 990px;
+            padding-top: 50px;
+            margin: 0 auto;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .item {
+            width: 150px;
+            height: 150px;
+            background: #ff9000;
+        }
+
+        p {
+            background: red;
+        }
+    </style>
+</head>
+<body>
+
+<div class="justify-layout">
+    <div class="mod">
+        <ul class="list">
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+        </ul>
+    </div>
+    <p>a啊啊啊飒飒</p>
+
+    <style>
+        .list {
+            font-size: 0;
+            text-align: justify;
+        }
+
+        .list::after {
+            content: "";
+            display: inline-block;
+            width: 100%;
+        }
+
+        .item {
+            display: inline-block;
+            font-size: 12px;
+        }
+    </style>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>列表普通布局</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            width: 990px;
+            padding-top: 50px;
+            margin: 0 auto;
+        }
+
+        ul {
+            list-style: none;
+            margin-right: -18px;
+        }
+
+        .float-layout {
+            overflow: hidden;
+            margin: 100px 0;
+        }
+
+        .item {
+            width: 150px;
+            height: 150px;
+            margin-right: 18px;
+            background: #ff9000;
+        }
+    </style>
+</head>
+<body>
+<div class="float-layout">
+    <h1>浮动方案</h1>
+    <div class="mod">
+        <ul class="list">
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+        </ul>
+    </div>
+
+    <style>
+        .float-layout .item {
+            float: left;
+        }
+    </style>
+</div>
+
+
+<div class="inline-block-layout">
+    <h1>inline-block方案</h1>
+    <div class="mod">
+        <ul class="list">
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+        </ul>
+    </div>
+
+    <style>
+        .inline-block-layout .list {
+            font-size: 0;
+        }
+
+        .inline-block-layout .item {
+            display: inline-block;
+            *display: inline;
+            *zoom: 1;
+            font-size: 12px;
+        }
+    </style>
+</div>
+
+
+</body>
+</html>
