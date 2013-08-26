@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text-Effect</title>
+</head>
+<style>
+    h1 {
+        color: #13DAEC;
+    }
+
+    li {
+        font-size: 2em;
+        list-style: none;
+        margin-bottom: 1em;
+    }
+
+    div {
+        float: left;
+        margin-left: 5em;
+        border: 2px solid #17ff2e;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+    .simple-shadow .one {
+        text-shadow: 3px 3px #bbb;
+    }
+
+    .simple-shadow .two {
+        text-shadow: -3px -3px #BBB;
+    }
+
+    .simple-shadow .three {
+        text-shadow: -5px 3px #BBB;
+    }
+
+    .simple-shadow .four {
+        text-shadow: -5px 0 #BBB;
+    }
+
+    .blur-shadow .one {
+        text-shadow: 3px 3px 3px #BBB;
+    }
+
+    .blur-shadow .two {
+        text-shadow: 0 0 3px #000;
+        color: #fff;
+    }
+
+    .blur-shadow .three {
+        text-shadow: 0 0 10px #000;
+        color: #fff;
+    }
+
+    .multiple-shadow .one {
+        text-shadow: 0 -2px 3px #FFF, 0 -4px 3px #AAA, 0 -6px 6px #666, 0 -8px 9px #000;
+    }
+
+    .multiple-shadow .two {
+        color: #FFF;
+        text-shadow: 0 2px rgba(0, 0, 0, 0.4), 0 4px rgba(0, 0, 0, 0.4), 0 6px rgba(0, 0, 0, 0.4), 0 8px 0 rgba(0, 0, 0, 0.4);
+    }
+
+    .letterpress{
+        padding: 5px 10px;
+        background-color: #565656;
+        color: #333;
+        font-size: 5em;
+        text-shadow: 0 1px #777, 0 -1px #000;
+    }
+
+    .text-stroke .one {
+        -webkit-text-fill-color: #fff;
+        -webkit-text-stroke-color: #555;
+        -webkit-text-stroke-width: 3px;
+        text-stroke-width: 3px;
+        text-stroke-color: #555;
+        text-fill-color: #fff;
+        font-size: 5em;
+    }
+
+    .text-stroke .two {
+        padding: 5px 10px;
+        background-color: #565656;
+        -webkit-text-fill-color: #333;
+        -webkit-text-stroke-color: #666;
+        -webkit-text-stroke-width: 1px;
+        text-stroke-width: 1px;
+        text-stroke-color: #666;
+        text-fill-color: #333;
+        font-size: 6em;
+    }
+
+    .text-overflow .one {
+        width: 180px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .text-overflow .two {
+        width: 180px;
+        overflow: hidden;
+        text-overflow: tt;
+        white-space: nowrap;
+    }
+
+    .text-rendering {
+        font-family: serif;
+    }
+
+
+    .text-rendering .speed{
+        font-size: 5em;
+        text-rendering: optimizeSpeed;
+    }
+
+    .text-rendering .legibility {
+        font-size: 5em;
+        text-rendering: optimizeLegibility
+    }
+
+    .text-rendering .geometric {
+        font-size: 5em;
+        text-rendering: geometricPrecision
+    }
+
+    .font-smooothing .subpixel-antialiased {
+        -webkit-font-smoothing: subpixel-antialiased;
+    }
+
+    .font-smooothing .antialiased {
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .font-smooothing .none {
+        -webkit-font-smoothing: none;
+    }
+    
+</style>
+<body>
+<div class="simple-shadow">
+    <h1>
+        Simple Shadows
+    </h1>
+    <ul>
+        <li class="one">
+            Shadows
+        </li>
+        <li class="two">
+            Shadows
+        </li>
+        <li class="three">
+            Shadows
+        </li>
+        <li class="four">
+            Shadows
+        </li>
+    </ul>
+</div>
+
+<div class="blur-shadow">
+    <h1>Blur Shadows</h1>
+    <ul>
+        <li class="one">
+            Shadows
+        </li>
+        <li class="two">
+            Shadows
+        </li>
+        <li class="three">
+            Shadows
+        </li>
+    </ul>
+</div>
+
+<div class="multiple-shadow">
+    <h1>Multiple Shadows</h1>
+    <ul>
+        <li class="one">
+            Shadows
+        </li>
+        <li class="two">
+            Shadows
+        </li>
+        <!--
+            dark for the characters,
+            medium for the background,
+            lighter and darker for the shadow.
+        -->
+        <li class="letterpress">
+            Letterpress
+        </li>
+    </ul>
+</div>
+
+
+<div class="text-stroke">
+    <h1>Text Stroke</h1>
+    <ul>
+        <li class="one">
+            Text Stroke
+        </li>
+        <li class="two">
+            Text Stroke
+        </li>
+    </ul>
+</div>
+
+<div class="text-overflow">
+    <h1>Text Overflow</h1>
+    <ul>
+        <li class="one">
+            Text Overflow
+        </li>
+        <li class="two">
+            Text Overflow
+        </li>
+    </ul>
+</div>
+
+<div class="text-rendering">
+    <h1>Text Rendering</h1>
+    <ul>
+        <li class="speed">
+            ff fi fl ffl
+        </li>
+        <li class="legibility">
+            ff fi fl ffl
+        </li>
+        <li class="geometric">
+            ff fi fl ffl
+        </li>
+    </ul>
+</div>
+
+<div class="font-smooothing">
+    <h1>Font Smoothing</h1>
+    <li class="subpixel-antialiased">
+        subpixel-antialiased:
+        The quick brown fox
+    </li>
+    <li class="antialiased">
+        antialiased:
+        The quick brown fox
+
+    </li>
+    <li class="none">
+        none:
+        The quick brown fox
+
+    </li>
+</div>
+
+
+</body>
+</html>
