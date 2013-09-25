@@ -17,6 +17,14 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
 
+img {
+    max-width: 100%;
+}
+
+article ul {
+    text-indent: 4em;
+}
+
 .img-wrap {
     text-align: center;
     text-indent: 0 !important;
