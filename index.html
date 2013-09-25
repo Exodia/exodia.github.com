@@ -3,52 +3,12 @@ layout: default
 title: 我的Blog
 HOME: 1
 ---
-<div class="l-left left-col">
-    <h2 class="title">最新文章</h2>
-    <ul class="article-list">
-            {% for post in site.posts %}
-        <li>
-            <time>{{ post.date | date_to_string }}</time>
-            <a href="{{post.url}}" target="_blank">{{ post.title }}</a>
-        </li>
-            {% endfor %}
-    </ul>
-</div>
-
-<div class="l-right right-col">
-    <h2 class="title">博客事件</h2>
-    <ul class="blog-action">
-        <li>
-            <time>2013年2月19日</time>
-            <p>博客文章迁移完毕</p>
-        </li>
-        <li>
-            <time>2013年2月19日</time>
-            <p>增加对低级浏览器HTML5的标签支持</p>
-        </li>
-        <li>
-            <time>2013年2月18日</time>
-            <p>增加博客事件列表，记录博客搭建历程</p>
-        </li>
-        <li>
-            <time>2013年2月18日</time>
-            <p>搭建Pygmengts环境，将博客语法高亮样式切换为monokai风格</p>
-        </li>
-        <li>
-            <time>2013年2月10日</time>
-            <p>搭建好本地jekyll环境，完成基本博客基本布局，并跑通exodia.net域名</p>
-        </li>
-        <li>
-            <time>2013年2月10日</time>
-            <p>完成博客基本布局模板，跑通exodia.net域名</p>
-        </li>
-        <li>
-            <time>2013年2月9日</time>
-            <p>了解jekyll语法，搭建本地环境</p>
-        </li>
-        <li>
-            <time>2013年2月8日</time>
-            <p>确定博客界面风格</p>
-        </li>
-    </ul>
-</div>
+<h2 class="title">最新文章</h2>
+<ul class="article-list">
+    {% for post in site.posts %}
+    <li>
+        <time>{{ post.date | date_to_string }}</time>
+        <a href="{{post.url}}" target="_blank">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
