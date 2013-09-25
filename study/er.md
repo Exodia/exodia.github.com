@@ -4,7 +4,7 @@ title: er总结
 category: 前端 JavaScript 读书笔记
 ---
 
-#{page.title}
+#{{page.title}}
 
 ## ER 介绍
 
@@ -20,7 +20,7 @@ ER具有如下特性：
 - 提供支持基本逻辑和数据绑定的模板引擎，提供模板嵌套和母板页。
 - 不依赖任何第三方库，模块精简、可切分及独立运行。
 
-![ER总体结构](doc/asset/er-overview.png)
+![ER总体结构](img/er-overview.png)
 
 ER的目的在于让业务开发工程师可以关注于 **数据（Model）** 、 **业务（Action）** 和 **视图（View）** 这三部分，而不需要关心如 **数据怎么获取** 、 **权限如何管理** 、 **URL如何控制** 等技术性问题。
 
