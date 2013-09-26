@@ -166,13 +166,13 @@ var inherits = function (SubCls, SuperCls) {
 $super 流程如下：
 
 1. 找 caller
-2. 获取caller的函数名**\_\_name__**
-3. 获取 caller 的拥有者**\_\_owner__**
-4. 找到**\_\_owner__**的父类
+2. 获取caller的函数名**\_\_name\__**
+3. 获取 caller 的拥有者**\_\_owner\__**
+4. 找到**\_\_owner\__**的父类
 5. 调用同名函数
 
 inherits 函数主要的功能有两个，一个是实现了比较经典的原型链继承，
-一个是对原型函数附加了 **\_\_name__** 和 **\_\_owner__** 属性。
+一个是对原型函数附加了 **\_\_name\__** 和 **\_\_owner\__** 属性。
 前者是为了方便的找到函数名，后者是为了在多级继承的时候，跳出作用域的死循环。
 
 查看源码和 demo，[点此进入](http://exodia.net/demo/class/)
