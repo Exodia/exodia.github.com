@@ -2,89 +2,151 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Test-X.Class</title>
+    <title>$super call demo</title>
 </head>
 <body>
-<script src="X.core.js"></script>
-<script src="X.class.js"></script>
 <script>
-    var Super = X.Class.create({
-        constructor: function (prop1, prop2) {
-            this.superProp1 = prop1
-            this.superProp2 = prop2
-        },
-        fn1: function () {
-            return this.superProp1
-        },
-        fn2: function () {
-            return this.superProp2
-        },
-        each: function (arr, fn) {
-            for (var i = 0; i < arr.length; ++i) {
-                fn.call(arr, arr[i], i, arr)
+    var mix = function (des, src) {
+        for (var k in src) {
+            src.hasOwnProperty(k) && (des[k] = src[k])
+        }
+    }
+
+    var each = function (obj, fn) {
+        if (obj instanceof  Array) {
+            for (var i = 0, len = obj.length; i < len; ++i) {
+                fn(obj[i], i, obj)
             }
-        },
-        plus: function () {
-            var sum = 0
-            this.each(arguments, function (v) {
-                sum += v
-            })
 
-            return sum
+            return
         }
-    })
 
-    var Sub1 = X.Class.create(Super, {
-        constructor: function (prop1, prop2, prop3, prop4) {
-            this.$$super(prop1, prop2)
-            this.sub1Prop1 = prop3
-            this.sub1Prop2 = prop4
-        },
-        fn1: function () {
-            return this.plus(this.$$super(), this.sub1Prop1)
-        },
-        fn2: function () {
-            return this.plus(this.$$super(), this.sub1Prop2)
-        },
-        minus: function () {
-            var sum = 0
-            this.each(arguments, function (v) {
-                sum -= v
-            })
-
-            return sum
+        for (var k in obj) {
+            obj.hasOwnProperty(k) && fn(obj[k], k, obj)
         }
-    })
+    }
 
-    var Sub2 = X.Class.create(Sub1, {
-        constructor: function (prop1, prop2, prop3, prop4, prop5, prop6) {
-            this.$$super(prop1, prop2, prop3, prop4)
-            this.sub2Prop1 = prop5
-            this.sub2Prop2 = prop6
-        },
-        fn1: function () {
-            return this.plus(this.$$super(), this.sub2Prop1)
-        },
-        fn2: function () {
-            return this.plus(this.$$super(), this.sub2Prop2)
-        },
-        multi: function () {
-            var sum = 1
-            this.each(arguments, function (v) {
-                sum *= v
-            })
+    var $super = function (args) {
+        var method = this.$super.caller
 
-            return sum
+        if (!method) {
+            throw "Cannot call $super outside!"
         }
-    })
 
-    window.sub1 = new Sub1(1,2,3,4)
-    window.sub2 = new Sub2(1, 2, 3, 4, 5, 6)
 
-    console.log(sub1.fn1() == (1 + 3))
-    console.log(sub1.fn2() == (2 + 4))
-    console.log(sub2.fn1() == (1 + 3 + 5))
-    console.log(sub2.fn2() == (2 + 4 + 6))
+        var name = method.__name__
+        var superCls = method.__owner__.$superClass
+        var superMethod = superCls[name]
+
+
+        if (typeof superMethod !== 'function') {
+            throw "Call the super class's " + name + ", but it is not a function!"
+        }
+
+        return superMethod.apply(this, args)
+    }
+
+    var enumProperties = [
+        'constructor',
+        'hasOwnProperty',
+        'isPrototypeOf',
+        'propertyIsEnumerable',
+        'toString',
+        'toLocaleString',
+        'valueOf'
+    ]
+
+    var inherits = function (SubCls, SuperCls) {
+        var overrides = SubCls.prototype
+        var superPro = SuperCls.prototype
+
+        var fn = function () {}
+        fn.prototype = superPro
+
+        var subPro = SubCls.prototype = new fn
+
+        for (var k in overrides) {
+            var v = overrides[k]
+            if (typeof v === 'function') {
+                v.__name__ = k
+                v.__owner__ = subPro
+            }
+
+            if (superPro.hasOwnProperty(k)) {
+                var sv = superPro[k]
+                if (typeof sv.__name__ !== 'string') {
+                    sv.__name__ = k
+                    sv.__owner__ = superPro
+                }
+            }
+
+            subPro[k] = v
+        }
+
+        subPro.constructor = SubCls
+
+        //对不可枚举的属性做一次检测
+        each(enumProperties, function (prop) {
+            if (subPro.hasOwnProperty(prop)) {
+                subPro[prop].__name__ = prop
+                subPro[prop].__owner__ = subPro
+            }
+        })
+
+        subPro.$superClass = superPro
+        subPro.$super = $super
+    }
+
+</script>
+<script>
+    var A = function () {
+        console.log('---A init---')
+    }
+
+    A.prototype.method = function () {
+        console.log('---A method---')
+    }
+
+
+    var B = function () {
+        this.$super(arguments)
+        console.log('---B init---')
+    }
+
+    B.prototype.method = function () {
+        this.$super(arguments)
+        console.log('---B method---')
+    }
+
+
+    var C = function () {
+        this.$super(arguments)
+        console.log('---C init---')
+    }
+
+    C.prototype.method = function () {
+        this.$super(arguments)
+        console.log('---C method---')
+    }
+
+    var D = function () {
+        this.$super(arguments)
+        console.log('---D init---')
+    }
+
+
+    inherits(B, A)
+    inherits(C, B)
+
+    console.log('new B')
+    var b = new B
+    console.log('new C')
+    var c = new C
+    console.log('b.method()')
+    b.method()
+    console.log('c.method()')
+    c.method()
+
 </script>
 </body>
 </html>
