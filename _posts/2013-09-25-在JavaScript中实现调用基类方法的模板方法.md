@@ -175,7 +175,9 @@ inherits 函数主要的功能有两个，一个是实现了比较经典的原�
 一个是对原型函数附加了 __name__ 和 __owner__ 属性。
 前者是为了方便的找到函数名，后者是为了在多级继承的时候，跳出作用域的死循环。
 
-另外一种类工厂模式的实现可以参见： [https://github.com/Exodia/x/blob/master/src/class.js]
+查看源码和 demo，[点此进入](http://exodia.net/demo/class/)
+
+另外一种类工厂模式的实现可以参见：(https://github.com/Exodia/x/blob/master/src/class.js)
 
 
 
