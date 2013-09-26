@@ -166,18 +166,18 @@ var inherits = function (SubCls, SuperCls) {
 $super 流程如下：
 
 1. 找 caller
-2. 获取caller的函数名__name__
-3. 获取 caller 的拥有者__owner__
-4. 找到__owner__的父类
+2. 获取caller的函数名**__name__**
+3. 获取 caller 的拥有者**__owner__**
+4. 找到**__owner__**的父类
 5. 调用同名函数
 
 inherits 函数主要的功能有两个，一个是实现了比较经典的原型链继承，
-一个是对原型函数附加了 __name__ 和 __owner__ 属性。
+一个是对原型函数附加了 **__name__** 和 **__owner__** 属性。
 前者是为了方便的找到函数名，后者是为了在多级继承的时候，跳出作用域的死循环。
 
 查看源码和 demo，[点此进入](http://exodia.net/demo/class/)
 
-另外一种类工厂模式的实现可以参见：(https://github.com/Exodia/x/blob/master/src/class.js)
+另外一种类工厂模式的实现可以参见：[https://github.com/Exodia/x/blob/master/src/class.js]
 
 
 
