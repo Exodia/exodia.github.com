@@ -50,7 +50,7 @@ var forEach = function(arr, fn, context) {
 仅仅对数组长度做了个缓存，不仅修复了无限循环的问题，还避免了 length 的重复读取。
 好像很不错？ 再来一段调用代码吧：
 
-```javacript
+```javascript
 var count = 0
 forEach([0,1,2,3,4], function(v, i, arr) {
     ++count
