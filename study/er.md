@@ -20,7 +20,8 @@ ER具有如下特性：
 
 ![ER总体结构](img/er-overview.png)
 
-ER的目的在于让业务开发工程师可以关注于 **数据（Model）** 、 **业务（Action）** 和 **视图（View）** 这三部分，而不需要关心如 **数据怎么获取** 、 **权限如何管理** 、 **URL如何控制** 等技术性问题。
+ER的目的在于让业务开发工程师可以关注于 **数据（Model）** 、 **业务（Action）** 和 **视图（View）** 这三部分，
+而不需要关心如 **数据怎么获取** 、 **权限如何管理** 、 **URL如何控制** 等技术性问题。
 
 **以上是复制粘贴，如有雷同，纯属我抄袭。。。**
 
@@ -54,7 +55,7 @@ locator 则是 hash 方案的一种底层实现，支撑着整个 MVC 架构，�
 
 ### 原理（执行流程）
 1. controller.start
-2. router.serBackup注册renderAction，将起始页的 url 丢进去
+2. router.setBackup注册renderAction，将起始页的 url 丢进去
 3. forward 到起始页url对应的 action 中
 4. 成功则 enterAction，此后就交给 action 处理逻辑，自己结束此次转发工作，返回。
 5. 失败则抛出错误

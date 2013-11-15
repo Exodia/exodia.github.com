@@ -29,7 +29,9 @@
 <div class="reveal">
     <!-- Any section element inside of this container is displayed as a slide -->
     <div class="slides">
-        {{content}}
+        <section data-markdown>
+            {{content}}
+        </section>
     </div>
 </div>
 <script src="/libs/reveal.js/lib/js/head.min.js"></script>
@@ -85,6 +87,6 @@
 </div>
 <video id="video" autoplay width="300" style="display:none"></video>
 <canvas id="canvas" style="width:300px;display:none;"></canvas>
-<script src="/libs/reveal.js/js/gesture.js"></script>
+<!--<script src="/libs/reveal.js/js/gesture.js"></script>-->
 </body>
 </html>
