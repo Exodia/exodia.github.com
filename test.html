@@ -5,30 +5,29 @@
 </head>
 <body>
 <script>
-    function loadScript(url, cb) {
+    function loadScript(url) {
         var script = document.createElement('script');
-        script.addEventListener('load', function () {
+        /*script.addEventListener('load', function () {
+         alert(111)
+         }, false)*/
+        script.onload = script.onreadystatechange = function () {
             alert(111)
-        }, false)
-       /* script.onload = script.onreadystatechange = function () {
-
             if (!script.readyState || /loaded|complete/.test(script.readyState)) {
                 script.onload = script.onreadystatechange = null;
                 script.parentNode.removeChild(script);
                 script = null;
-                cb();
             }
-        };*/
+        };
         script.type = 'text/plain'; //注释这行则会执行 onload。。。。
         script.src = url;
         script.async = true;
 
-        var head = document.head;
+        var head = document.getElementsByTagName('head')[0];
 
         head.appendChild(script);
     }
 
-    loadScript('http://a.tbcdn.cn/s/aplus_v2.js', function(){})
+    loadScript('http://a.tbcdn.cn/s/aplus_v2.js')
 </script>
 </body>
 </html>
