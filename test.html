@@ -18,7 +18,7 @@
                 script = null;
             }
         };
-        script.type = 'text/plain'; //注释这行则会执行 onload。。。。
+        script.type = 'text/preload'; //注释这行则会执行 onload。。。。
         script.src = url;
 
         var head = document.getElementsByTagName('head')[0];
