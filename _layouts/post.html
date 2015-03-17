@@ -3,40 +3,36 @@
 <head>
     <title>{{page.title}}</title>
     <meta charset="utf-8"/>
-    <meta name="viewport"  content="initial-scale=1,width=device-width" />
-    <meta >
-    <link rel="stylesheet" href="http://necolas.github.com/normalize.css/2.1.0/normalize.css">
+    <meta name="viewport" content="initial-scale=1,width=device-width"/>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/global/global.css">
     <link rel="stylesheet" href="/global/syntax.css">
-    <!--[if lt IE 9]>
-    <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
 </head>
 <body>
 <header id="header">
-    <nav id="nav">
-        <ul class="nav-list l-right">
+    <nav>
+        <ul class="nav nav-tabs">
             <li class="nav-item">
                 <a class="nav-link {% if page.HOME %} s-active {% endif %}" href="/">HOME</a>
             </li>
-            <li class="nav-item"><a class="nav-link {% if page.ABOUT %} s-active {% endif %}" href="/share.html">SHARE</a></li>
+            <!--<li class="nav-item"><a class="nav-link" href="#">ARCHIVE</a></li>-->
             <li class="nav-item">
-                <a class="nav-link {% if page.ABOUT %} s-active {% endif %}" href="/resume.html">ABOUT ME</a>
+                <a class="nav-link {% if page.SHARE %} s-active {% endif %}" href="share.html">SHARE</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {% if page.ABOUT %} s-active {% endif %}" href="resume">ABOUT ME</a>
             </li>
         </ul>
     </nav>
-    <section id="guard-pic"></section>
 </header>
-<section id="main">
+<section id="main" class="container">
     <section class="content">
         <article>
             {{content}}
         </article>
     </section>
 </section>
-<footer id="footer">
 
-</footer>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="/global/global.js"></script>
 </body>

@@ -3,18 +3,14 @@
 <head>
     <title>遗世之都</title>
     <meta charset="utf-8"/>
-    <meta name="viewport"  content="initial-scale=1,width=device-width" />
-    <link rel="stylesheet" href="http://necolas.github.com/normalize.css/2.1.0/normalize.css">
+    <meta name="viewport" content="initial-scale=1,width=device-width"/>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/global/global.css">
-    <link rel="stylesheet" href="/global/print.css" media="print">
-    <!--[if lt IE 9]>
-    <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
 </head>
 <body>
 <header id="header">
-    <nav id="nav">
-        <ul class="nav-list l-right">
+    <nav>
+        <ul class="nav nav-tabs">
             <li class="nav-item">
                 <a class="nav-link {% if page.HOME %} s-active {% endif %}" href="/">HOME</a>
             </li>
@@ -27,9 +23,8 @@
             </li>
         </ul>
     </nav>
-    <section id="guard-pic"></section>
 </header>
-<section id="main">
+<section id="main" class="container">
     <section class="content">
         {{content}}
     </section>
