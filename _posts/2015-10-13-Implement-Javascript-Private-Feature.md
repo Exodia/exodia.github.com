@@ -18,11 +18,11 @@ category: javascript
 ```javascript
 
 var MyClass = function () {
-         this._privateProp = ‘privateProp’;
+    this._privateProp = ‘privateProp’;
 };
 
 MyClass.prototype.getPrivateProp = function () {
-       return this._privateProp;
+    return this._privateProp;
 };
 
 var my = new MyClass();
@@ -50,16 +50,15 @@ alert(my._privateProp); // 并未真正隐藏，依然弹出 ‘privateProp’
 ```javascript
 
 (function() {
-
-  var privateProp = Symbol(); // 每次调用会产生一个唯一的key
-
-  function MyClass() {
-       this[privateProp] = ‘privateProp’; // 闭包内引用到这个 key
-  }
-
-  MyClass.prototype.getPrivateProp = function () {
-       return this[privateProp];
- };
+      var privateProp = Symbol(); // 每次调用会产生一个唯一的key
+    
+      function MyClass() {
+          this[privateProp] = ‘privateProp’; // 闭包内引用到这个 key
+      }
+    
+      MyClass.prototype.getPrivateProp = function () {
+          return this[privateProp];
+     };
 })();
 
 var my = new MyClass();
@@ -87,17 +86,15 @@ alert(my.privateProp); // 弹出 undefined，因为成员的key其实是随机�
 ```javascript
 
 (function() {
-
-  var privateStore = new WeakMap(); // 私有成员存储容器
-
-  function MyClass() {
-       privateStore.set(this, {privateProp: ‘privateProp’}); // 闭包内引用到privateStore, 用当前实例做 key，设置私有成员
-  }
-
-  MyClass.prototype.getPrivateProp = function () {
-       return privateStore.get(this).privateProp; 
- };
-
+      var privateStore = new WeakMap(); // 私有成员存储容器
+    
+      function MyClass() {
+          privateStore.set(this, {privateProp: ‘privateProp’}); // 闭包内引用到privateStore, 用当前实例做 key，设置私有成员
+      }
+    
+      MyClass.prototype.getPrivateProp = function () {
+          return privateStore.get(this).privateProp; 
+     };
 })();
 
 var my = new MyClass();
@@ -135,16 +132,15 @@ shim 出来的 WeakMap 主要是无法追溯实例的生命周期，而实例上
 
 (function() {
 
-  var $private = createPrivate(); // 私有成员 token 函数，可以传入对象参数，会作为原型链上的私有成员
-
-  function MyClass() {
-      $private(this).privateProp = ‘privateProp’ ; // 闭包内引用到privateStore, 用当前实例做 key，设置私有成员
-  }
-
-  MyClass.prototype.getPrivateProp = function () {
-       return $private(this).privateProp; 
- };
-
+      var $private = createPrivate(); // 私有成员 token 函数，可以传入对象参数，会作为原型链上的私有成员
+    
+      function MyClass() {
+          $private(this).privateProp = ‘privateProp’ ; // 闭包内引用到privateStore, 用当前实例做 key，设置私有成员
+      }
+    
+      MyClass.prototype.getPrivateProp = function () {
+          return $private(this).privateProp; 
+     };
 })();
 
 var my = new MyClass();
@@ -156,15 +152,15 @@ alert(my.privateProp); // 弹出 undefined，实例上并没有 privateProp 属�
 ```javascript
 // createPrivate.js
 function createPrivate(prototype) {
-     var privateStore = Symbol('privateStore');
-      var classToken = Symbol(‘classToken’);
-     return function getPrivate(instance) {
-          if (!instance.hasOwnProperty(privateStore)) {
-              instance[privateStore] = {};
-          }
+    var privateStore = Symbol('privateStore');
+    var classToken = Symbol(‘classToken’);
+    return function getPrivate(instance) {
+         if (!instance.hasOwnProperty(privateStore)) {
+             instance[privateStore] = {};
+         }
 	     var store = instance[classToken];
-            store[token] = store[token] || Object.create(prototype || {});
-            return store[token];
+         store[token] = store[token] || Object.create(prototype || {});
+         return store[token];
      };
 }
 ```
@@ -177,12 +173,13 @@ function createPrivate(prototype) {
 
 该方案纯粹是闲得无聊玩了玩，主要是利用了 es5 提供的 getter，根据 argument.callee.caller 去判断调用场景，如果是外部的则抛异常或返回 undefined，如果是内部调用则返回真正的私有成员，实现起来比较复杂，且不支持 strict 模式，不推荐使用。
 
-实现见：https://github.com/ecomfe/oo/blob/feature/private/src/definePrivateMembers.js
+实现见：(https://github.com/ecomfe/oo/blob/feature/private/src/definePrivateMembers.js)
 
 ## 总结
 
 以上几个方案对比下来，我个人是倾向 Symbol+WeakMap 的整合方案，结合了两者的优点，又弥补了 WeakMap 的不足和 Symbol 书写的冗余。
-当然了，我相信随着 JS 的发展，私有成员和保护成员也迟早会在语法层面上进行支持，正如  es6 对 class 关键字和 super语法糖的支持一样，只是现阶段需要开发者使用一些技巧去填补语言特性上的空白。
+当然了，我相信随着 JS 的发展，私有成员和保护成员也迟早会在语法层面上进行支持，正如  es6 对 class 关键字和 super 语法糖的支持一样，
+只是现阶段需要开发者使用一些技巧去填补语言特性上的空白。
 
 ## 参考文章
 
