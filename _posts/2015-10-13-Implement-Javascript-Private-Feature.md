@@ -171,9 +171,9 @@ function createPrivate(prototype) {
 
 ### 奇葩的 es5 property getter 拦截方案
 
-该方案纯粹是闲得无聊玩了玩，主要是利用了 es5 提供的 getter，根据 argument.callee.caller 去判断调用场景，如果是外部的则抛异常或返回 undefined，如果是内部调用则返回真正的私有成员，实现起来比较复杂，且不支持 strict 模式，不推荐使用。
-
-实现见：(https://github.com/ecomfe/oo/blob/feature/private/src/definePrivateMembers.js)
+该方案纯粹是闲得无聊玩了玩，主要是利用了 es5 提供的 getter，根据 argument.callee.caller 去判断调用场景，如果是外部的则抛异常或返回 undefined，
+如果是内部调用则返回真正的私有成员，实现起来比较复杂，且不支持 strict 模式，不推荐使用。 
+有兴趣的同学可以看看[实现](https://github.com/ecomfe/oo/blob/feature/private/src/definePrivateMembers.js)。
 
 ## 总结
 
