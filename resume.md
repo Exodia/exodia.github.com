@@ -79,7 +79,7 @@ title:  那个关于我
 
 ### @淘宝
 
-#### 淘宝网-Phenix 项目： 淘宝逛逛(guang.taobao.com), 新版个人主页(my.taobao.com )
+#### 淘宝网-Phenix 项目： [淘宝逛逛](http://guang.taobao.com), [新版个人主页](my.taobao.com)
 
 - 项目前端 PM, 协调 2 个项目,6 个前端间的工作分配与排期 
 - 个人主页前端架构设计与开发
