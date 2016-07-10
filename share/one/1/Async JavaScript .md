@@ -1,4 +1,3 @@
-#精通one 了解more 关注next—精通one（1）
 #Async Javascript
 异步编程的三种模式
 ##Callback
