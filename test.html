@@ -1,32 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>test</title>
 </head>
 <body>
-<script>
-    function loadScript(url) {
-        var script = document.createElement('script');
-        /*script.addEventListener('load', function () {
-         alert(111)
-         }, false)*/
-        script.onload = script.onreadystatechange = function () {
-            alert(111)
-            if (!script.readyState || /loaded|complete/.test(script.readyState)) {
-                script.onload = script.onreadystatechange = null;
-                script.parentNode.removeChild(script);
-                script = null;
-            }
-        };
-        script.type = 'text/preload'; //注释这行则会执行 onload。。。。
-        script.src = url;
-
-        var head = document.getElementsByTagName('head')[0];
-
-        head.appendChild(script);
-    }
-
-    loadScript('http://a.tbcdn.cn/s/aplus_v2.js')
-</script>
+<script src="https://qiyukf.com/script/044865c94981c048609d5c94c1ae9c6d.js" charset="UTF-8"></script>
 </body>
 </html>
